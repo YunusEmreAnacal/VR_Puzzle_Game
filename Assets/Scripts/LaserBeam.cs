@@ -61,18 +61,34 @@ public class LaserBeam
 
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
     {
+        // Eðer Mirror tag'ine çarparsa ýþýný yansýt
         if (hitInfo.collider.gameObject.tag == "Mirror")
         {
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
-
             CastRay(pos, dir, laser);
+        }
+        // Eðer DoorOpener tag'ine çarparsa kapýyý aç
+        else if (hitInfo.collider.gameObject.tag == "DoorOpener")
+        {
+            Door doorScript = hitInfo.collider.gameObject.GetComponent<Door>();
+            if (doorScript != null)
+            {
+                // Kapý sadece bir kez açýlacak
+                doorScript.OpenDoor();
+            }
 
+            // Lazer ýþýnýný o noktada durdur
+            laserIndices.Add(hitInfo.point);
+            UpdateLaser();
         }
         else
         {
+            // Eðer baþka bir þeye çarparsa ýþýný o noktada durdur
             laserIndices.Add(hitInfo.point);
             UpdateLaser();
         }
     }
+
+
 }
