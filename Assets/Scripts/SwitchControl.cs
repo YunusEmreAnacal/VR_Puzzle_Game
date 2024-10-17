@@ -16,7 +16,7 @@ public class SwitchControl : MonoBehaviour
     public AudioClip switchPressSound;
     public AudioClip wrongOrderSound;
 
-    private AudioSource audioSource; // Reference to the AudioSource
+    public AudioSource audioSource; // Reference to the AudioSource
 
     private List<string> correctOrder = new List<string> { "Blue", "Red", "Black", "Yellow" };
     private List<string> playerOrder = new List<string>();
@@ -29,9 +29,15 @@ public class SwitchControl : MonoBehaviour
 
     void Start()
     {
-        // Get the AudioSource component
-        audioSource = GetComponent<AudioSource>();
+        
+
+        // AudioSource yoksa hata mesajý verin
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource bileþeni bulunamadý! Lütfen bu bileþeni GameObject'e ekleyin.");
+        }
     }
+
 
     // XR Simple Interactable ile bu fonksiyonu çaðýracaðýz
     public void OnSwitchTouched(string switchName)
@@ -86,9 +92,15 @@ public class SwitchControl : MonoBehaviour
     {
         if (clip != null && audioSource != null)
         {
+            Debug.Log("Ses çalýnýyor: " + clip.name);
             audioSource.PlayOneShot(clip);
         }
+        else
+        {
+            Debug.LogWarning("Ses çalýnamadý, AudioClip veya AudioSource eksik!");
+        }
     }
+
     // Þalterleri sýfýrlama fonksiyonu
     private void ResetSwitches()
     {
