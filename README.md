@@ -1,7 +1,7 @@
 # VR Escape Room Game
 
 ## Tutorial
-[Buraya Eğitici Linkinizi Ekleyin](#)
+[Gameplay](https://www.youtube.com/watch?v=aQalE0-nz3Y)
 
 ## Proje Açıklaması
 Bu proje, VR ortamında geçen bir kaçış odası oyununu kapsamaktadır. Oyuncu, karanlık bir odada uyanır ve evden kaçma görevine başlar. Oyuncunun ilk hedefi, elektriği açarak bir dizi bulmacayı çözmektir. Elektriği açtıktan sonra, aynalar ve lazer kullanarak kapıyı açmak için gerekli mekanizmaları devreye sokar.
