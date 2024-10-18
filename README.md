@@ -17,10 +17,10 @@ Bu proje, VR ortamında geçen bir kaçış odası oyununu kapsamaktadır. Oyunc
 - C#
 
 ## Ekran Görüntüleri
-![Aynalar](https://github.com/YunusEmreAnacal/VR_Puzzle_Game/Images/image1.png)  
+![Aynalar](https://github.com/YunusEmreAnacal/VR_Puzzle_Game/raw/main/Images/image1.png)  
 *Aynalar ve lazer cihazının görünümü.*
 
-![Elektrik Kutusu](https://github.com/YunusEmreAnacal/VR_Puzzle_Game/Images/image2.png)  
+![Elektrik Kutusu](https://github.com/YunusEmreAnacal/VR_Puzzle_Game/raw/main/Images/image2.png)  
 *Elektrik kutusu ve interaktif anahtarların görünümü.*
 
 ## Kurulum
