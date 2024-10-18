@@ -8,13 +8,11 @@ public class ShootLaser : MonoBehaviour
     LaserBeam beam;
 
     public AudioClip laserSound;  // Lazer sesi için AudioClip
-    public AudioSource audioSource;  // AudioSource referansý
+    public AudioSource audioSource;  
 
     void Start()
     {
-        
-
-        // Eðer audioSource atanmýþsa, lazer sesi loop olarak çalýnsýn
+ 
         if (audioSource != null && laserSound != null)
         {
             audioSource.clip = laserSound;

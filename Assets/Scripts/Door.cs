@@ -13,7 +13,7 @@ public class Door : MonoBehaviour
 
     void Start()
     {
-        // AudioSource bileþenini ekleyelim
+        
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = doorOpenSound;
     }
