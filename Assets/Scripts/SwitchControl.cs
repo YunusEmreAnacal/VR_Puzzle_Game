@@ -102,7 +102,7 @@ public class SwitchControl : MonoBehaviour
     }
 
     // Þalterleri sýfýrlama fonksiyonu
-    private void ResetSwitches()
+    public void ResetSwitches()
     {
         playerOrder.Clear();
 
