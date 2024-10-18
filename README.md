@@ -30,7 +30,7 @@ Bu proje, VR ortamında geçen bir kaçış odası oyununu kapsamaktadır. Oyunc
 4. Oyun sahnelerini çalıştırarak oyunu deneyimleyin.
 
 ## Katkıda Bulunanlar
-- [Adınız](link-to-your-github-profile)
+- [Yunus Emre Anaçal]([link-to-your-github-profile](https://github.com/YunusEmreAnacal/))
 
 ## Lisans
 Bu projeyi dilediğiniz gibi kullanabilirsiniz. Ancak, kaynakları ve içerikleri değiştirirken lütfen uygun atıfları yapmayı unutmayın.
